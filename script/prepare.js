@@ -24,7 +24,7 @@ const text = "javascript:(() => {" + contents
     // Remove multi-line comments
     .replace(/\/\*[\s\S]*?\*\//g, '')
     // Remove newlines and leading/trailing whitespace on each line
-    .split('\n').map(line => line.trim()).join('; ')
+    .split('\n').map(line => line.trim()).filter(line => line !== '').join('; ')
     // Collapse multiple spaces to one
     .replace(/\s+/g, ' ')
     // Trim any extra whitespace at the start or end
