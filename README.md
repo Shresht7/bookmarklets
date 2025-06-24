@@ -52,7 +52,7 @@ javascript:(() => {const html = document.getElementsByTagName('html')[0]; if (!h
 Make colorful boxes around every DOM element
 
 ```js
-javascript:(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++){all[i].style.outline='1px solid #'+(~~(Math.random()*(1<<24))).toString(16)}})();
+javascript:(() => {const all = document.getElementsByTagName('*'); for (let i = 0; i < all.length; i++) {; all[i].style.outline = '1px solid #' + (~~(Math.random() * (1 << 24))).toString(16); }})();
 ```
 
 ### Visualize Flex and Grid Elements
