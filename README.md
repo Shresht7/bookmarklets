@@ -1,6 +1,9 @@
 # Bookmarklets
 
-My collection of bookmarklets
+My collection of bookmarklets.
+
+Bookmarklets are tiny little javascript applets that live in the bookmarks bar and can run some web logic on a single click. They are just small enough
+to not warrant a full browser extension.
 
 ## 📖 Usage
 
