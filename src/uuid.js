@@ -1,0 +1,1 @@
+prompt('UUID:', crypto.randomUUID())
