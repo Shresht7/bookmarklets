@@ -1,3 +1,13 @@
 # Bookmarklets
 
 My collection of bookmarklets
+
+## Adjust Video Playback Rate
+
+Set the video's playback rate. Shows a prompt to set the playback speed (defaults to 4x).
+
+Use Case: Sometimes I want to go above the 2x speed limit of YouTube.
+
+```js
+javascript:(() => document.getElementsByTagName("video")[0].playbackRate = Number(prompt("Speed", "4")))();
+```
