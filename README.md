@@ -11,3 +11,11 @@ Use Case: Sometimes I want to go above the 2x speed limit of YouTube.
 ```js
 javascript:(() => document.getElementsByTagName("video")[0].playbackRate = Number(prompt("Speed", "4")))();
 ```
+
+## Make All Content Editable
+
+Makes the entire webpage editable
+
+```js
+javascript:(()=>{document.body.contentEditable='true';document.designMode='on';})();
+```
