@@ -19,3 +19,11 @@ Makes the entire webpage editable
 ```js
 javascript:(()=>{document.body.contentEditable='true';document.designMode='on';})();
 ```
+
+## Visualize DOM Elements
+
+Make colorful boxes around every DOM element
+
+```js
+javascript:(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++){all[i].style.outline='1px solid #'+(~~(Math.random()*(1<<24))).toString(16)}})();
+```
