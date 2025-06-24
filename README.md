@@ -32,6 +32,16 @@ Makes the entire webpage editable
 javascript:(()=>{document.body.contentEditable='true';document.designMode='on';})();
 ```
 
+## Invert Mode
+
+Apply an invert filter to the entire page.
+
+Use case: Makeshift dark (or light) mode
+
+```js
+javascript:(() => {const html = document.getElementsByTagName('html')[0]; if (!html.style.filter.includes('invert()')) {; html.style.filter += ' invert()'; } else {; html.style.filter = html.style.filter.replace('invert()', ''); }})();
+```
+
 ## Visualize DOM Elements
 
 Make colorful boxes around every DOM element
